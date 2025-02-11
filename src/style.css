@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+  color: #00ff00; /* Neon green */
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 30, 30, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-animation {
+  border: 8px solid #00ff00;
+  border-top: 8px solid transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+.loading-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00ff00;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #00ff00;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.terminal {
+  background-color: #121212; /* Darker shade */
+  border: 2px solid #00ff00;
+  width: 80%;
+  max-width: 800px; /* Increased width */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.terminal-title {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.terminal-buttons {
+  display: flex;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.close {
+  background-color: #ff5f56;
+}
+
+.minimize {
+  background-color: #ffbd2e;
+}
+
+.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 145;
+}
+
+.terminal-output {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.terminal-input {
+  width: 100%;
+  background-color: #121212; /* Same color as terminal window */
+  color: #00ff00;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.terminal-input:focus {
+  border: none;
+  outline: none;
+}
+
+h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seth Morianti - Cyberpunk Resume</title>
+  <style>
+    body {
+      background-color: #111;
+      /* Dark background */
+      color: #0f0;
+      /* Green text */
+      font-family: monospace;
+      /* Monospace font for that hacker vibe */
+      margin: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #0ff;
+      /* Cyan headings */
+    }
+
+  .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Additional styling for resume sections */
+  .section {
+      margin-bottom: 20px;
+    }
+
+  .section-title {
+      border-bottom: 1px solid #0f0;
+      /* Green underline for section titles */
+      padding-bottom: 5px;
+    }
+
+    /* Styling for experience and education items */
+  .item {
+      margin-bottom: 15px;
+    }
+
+  .item-title {
+      color: #ff0;
+      /* Yellow for item titles */
+    }
+
+    /* Styling for the dropdown */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+  .dropdown-button {
+      background-color: transparent;
+      color: #0ff;
+      /* Cyan for the button */
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #222;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+  .dropdown-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: monospace; /* Ensure the same font as the rest of the page */
+    }
+
+  .dropdown-content li {
+      padding: 8px 12px;
+      border-bottom: 1px solid #0f0;
+      /* Green border between items */
+    }
+
+  .dropdown:hover.dropdown-content {
+      display: block;
+    }
+
+    .tab-content {
+      display: none;
+      overflow: hidden;
+    }
+    .tab-button {
+      background-color: transparent;
+      color: #0ff;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2em;
+      font-family: monospace; /* Ensure the same font as the rest of the page */
+    }
+    .tab-button:after {
+      content: ' ▼';
+      float: right;
+    }
+    .tab-button.active:after {
+      content: ' ▲';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">
+      <a href="index.html?skipLoading=true" style="color: #0ff; text-decoration: none;">Seth Morianti</a>
+    </h1>
+
+    <div class="section">
+      <h2 class="section-title">Contact</h2>
+      <p>Phone: 705-206-0637</p>
+      <p>Email: sethm2002@hotmail.com</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Objective</h2>
+      <p>Motivated and adaptable professional with hands-on technical experience and strong problem-solving
+        abilities.
+        Eager to leverage my background in field operations, troubleshooting, and customer interactions to provide
+        exceptional support and ensure customer satisfaction. Passionate about learning new technologies, working in
+        dynamic environments, and contributing to a high-performing team.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">
+        <button class="tab-button">Summary of Qualifications</button>
+      </div>
+      <div class="tab-content">
+        <ul>
+          <li>Customer Service: Experienced in providing excellent customer service and ensuring customer satisfaction.</li>
+          <li>Sales Skills: Proven ability to achieve sales targets and upsell products.</li>
+          <li>Product Knowledge: Knowledgeable about a wide range of electronics and technology products.</li>
+          <li>Communication: Strong verbal communication skills to assist customers effectively.</li>
+          <li>Team Collaboration: Ability to work collaboratively in a team environment.</li>
+          <li>Problem-Solving: Skilled in addressing customer concerns and finding solutions.</li>
+          <li>Technical Experience: Strong knowledge of Office Suite and comfortable navigating online.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="item">
+        <h3 class="item-title">Certified Advisor</h3>
+        <p class="item-subtitle">Best Buy Canada (2020-2024)</p>
+        <ul>
+          <li>Provided sales assistance, helping customers find the best products to meet their needs</li>
+          <li>Collaborated with other advisors to enhance customer service and sales performance</li>
+          <li>Handled expensive products with care, ensuring their security and proper presentation</li>
+          <li>Talked about additional warranties and services, upselling best buy</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Summer Student (Forestry)</h3>
+        <p class="item-subtitle">City of Sault Ste. Marie (2024)</p>
+        <ul>
+          <li>Conducted routine maintenance on municipal properties, including parks, recreation centers, and public
+            buildings</li>
+          <li>Operated municipal vehicles and equipment, such as lawnmowers, trimmers, and trucks</li>
+          <li>Completed tasks efficiently both independently and as part of a small team</li>
+          <li>Adhered to detailed instructions to perform maintenance and repair duties</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Assistant Forest Technician</h3>
+        <p class="item-subtitle">MNRF (2022-2023)</p>
+        <ul>
+          <li>Spent summers working in various parts of the ministry, gaining a broad understanding of forestry
+            operations</li>
+          <li>Collaborated with a crew, traveling extensively across northern Ontario for weeks at a time</li>
+          <li>Utilized strong navigational skills to locate GPS plots deep in the wilderness</li>
+          <li>Conducted forest surveys and collected data on vegetation, wildlife, and environmental conditions</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Maintenance</h3>
+        <p class="item-subtitle">City of Sault Ste. Marie (Summer 2021)</p>
+        <ul>
+          <li>Performed general maintenance on city properties, including parks, recreational facilities, and public
+            buildings</li>
+          <li>Operated city vehicles and equipment, such as lawnmowers, trimmers, and trucks</li>
+          <li>Worked independently and as part of a small crew to complete assigned tasks efficiently</li>
+          <li>Followed detailed instructions to carry out maintenance and repair work</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Labourer</h3>
+        <p class="item-subtitle">Rays Contracting (Summer 2020)</p>
+        <ul>
+          <li>Performed general labor tasks, including demolition, site cleanup, and material handling</li>
+          <li>Worked effectively under pressure in a fast-paced construction environment</li>
+          <li>Managed multiple priorities and consistently met deadlines while working independently</li>
+          <li>Operated various tools and equipment safely and efficiently</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Yard Worker</h3>
+        <p class="item-subtitle">Crimson Ridge Golf Course (Summer 2019)</p>
+        <ul>
+          <li>Cleaned and maintained golf carts, ensuring they were ready for use by customers</li>
+          <li>Ensured all golf carts were returned at the end of the day and stored properly</li>
+          <li>Kept the golf course clean and presentable, performing tasks such as trash removal and landscaping</li>
+          <li>Worked independently, trusted to hit goals</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="item">
+        <h3 class="item-title">Forestry Technician</h3>
+        <p class="item-subtitle">Sault College (2024)</p>
+        <p>Enrolled for a second diploma at sault college, looking to use the courses here to get my tree marking
+          license.
+          Additionally, seeking more chainsaw classes and to learn more about environmental policy.</p>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Natural Environment Technologist</h3>
+        <p class="item-subtitle">Sault College (2022-2024)</p>
+        <p>Graduated in the natural environment program at sault college. Classes include Ecosystem Classification, Tree
+          and shrubs, and Outdoor Navigation. I also acquired ATV and Chainsaw Certifications.</p>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Chemical Engineering</h3>
+        <p class="item-subtitle">Laurentian University (2020-2022)</p>
+        <p>Completed 2 years in the chemical engineering program at Laurentian University</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const tabButton = document.querySelector(".tab-button");
+        const tabContent = document.querySelector(".tab-content");
+
+        tabButton.addEventListener("click", function() {
+            tabContent.style.display = tabContent.style.display === "block" ? "none" : "block";
+            tabButton.classList.toggle("active");
+        });
+    });
+  </script>
+</body>
+</html>
